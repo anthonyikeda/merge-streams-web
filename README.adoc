@@ -1,0 +1,9 @@
+= Testing out Stream Merges in Reactive Spring
+:version: 0.0.1
+:author: Anthony Ikeda <anthony.ikeda@gmail.com>
+:toc:
+
+== Overview
+
+Quick test of creating different streams then merging them much like the `forkJoin` of
+`rxjs`.

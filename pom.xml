@@ -23,7 +23,7 @@
 
     <distributionManagement>
         <repository>
-            <id>build-repo</id>
+            <id>github-anthonyikeda</id>
             <url>https://maven.pkg.github.com/anthonyikeda/merge-streams</url>
         </repository>
     </distributionManagement>

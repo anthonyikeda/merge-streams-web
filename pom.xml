@@ -9,7 +9,7 @@
     </parent>
     <groupId>org.ikeda</groupId>
     <artifactId>merge-streams-web</artifactId>
-    <version>0.0.2</version>
+    <version>0.0.3-SNAPSHOT</version>
     <name>Merge Streams</name>
     <description>Demo project for testing out merging of streams</description>
     <properties>
@@ -18,7 +18,7 @@
     <scm>
         <url>https://github.com/anthonyikeda/merge-streams-web.git</url>
         <connection>scm:git:${project.scm.url}</connection>
-        <tag>0.0.2</tag>
+        <tag>0.0.1</tag>
     </scm>
 
     <distributionManagement>

@@ -19,21 +19,31 @@
     <scm>
         <url>https://github.com/anthonyikeda/merge-streams-web</url>
         <connection>scm:git:git://github.com/anthonyikeda/merge-streams-web.git</connection>
+        <tag>HEAD</tag>
     </scm>
+
     <distributionManagement>
         <repository>
             <id>build-repo</id>
-            <url>https://github.com/anthonyikeda/merge-streams.git</url>
+            <url>https://maven.pkg.github.com/anthonyikeda/merge-streams</url>
         </repository>
     </distributionManagement>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-r2dbc</artifactId>
         </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-webflux</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>io.r2dbc</groupId>
+            <artifactId>r2dbc-postgresql</artifactId>
+            <version>0.8.13.RELEASE</version>
         </dependency>
 
         <dependency>
@@ -53,6 +63,31 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>3.0.0-M7</version>
+                <configuration>
+                    <tagNameFormat>@{project.version}</tagNameFormat>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>com.google.cloud.tools</groupId>
+                <artifactId>jib-maven-plugin</artifactId>
+                <version>3.3.1</version>
+                <configuration>
+                    <to>
+                        <image>anthonyikeda/merge-streams-web:${project.version}</image>
+                    </to>
+                    <from>
+                        <image>eclipse-temurin:19-jre</image>
+                    </from>
+                    <container>
+                        <mainClass>com.example.demo.DemoApplication</mainClass>
+                        <creationTime>USE_CURRENT_TIMESTAMP</creationTime>
+                    </container>
+                </configuration>
             </plugin>
         </plugins>
     </build>

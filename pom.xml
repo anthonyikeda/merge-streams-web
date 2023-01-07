@@ -24,7 +24,7 @@
     <distributionManagement>
         <repository>
             <id>github-anthonyikeda</id>
-            <url>https://maven.pkg.github.com/anthonyikeda/merge-streams</url>
+            <url>https://maven.pkg.github.com/anthonyikeda/merge-streams-web</url>
         </repository>
     </distributionManagement>
 

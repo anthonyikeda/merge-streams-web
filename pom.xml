@@ -17,9 +17,9 @@
         <java.version>19</java.version>
     </properties>
     <scm>
-        <url>https://github.com/anthonyikeda/merge-streams-web</url>
-        <connection>scm:git:git://github.com/anthonyikeda/merge-streams-web.git</connection>
-        <tag>HEAD</tag>
+        <url>https://github.com/anthonyikeda/merge-streams-web.git</url>
+        <connection>scm:git:${project.scm.url}</connection>
+        <tag>0.0.1</tag>
     </scm>
 
     <distributionManagement>

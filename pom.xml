@@ -9,7 +9,7 @@
     </parent>
     <groupId>org.ikeda</groupId>
     <artifactId>merge-streams-web</artifactId>
-    <version>0.0.3-SNAPSHOT</version>
+    <version>0.0.2-SNAPSHOT</version>
     <name>Merge Streams</name>
     <description>Demo project for testing out merging of streams</description>
     <properties>
